@@ -2,7 +2,7 @@
 
 import express, { Express, Request, Response }  from "express";
 import { createReadStream, statSync } from "fs" 
-import { resolve } from 'path';
+import path, { resolve } from 'path';
 import winston, { format } from "winston";
 
 // set up logging
@@ -29,6 +29,12 @@ app.get("/", (req: Request, res: Response) => {
     res.sendFile(resolve("./index.html"));
 });
 
+// get video size
+const getVideoSize = (videoPath: string) => {
+    const videoSize = statSync(videoPath).size;
+    return videoSize
+}
+
 // server video in chunks of 1MB
 app.get("/video", (req: Request, res: Response) => {
     const range = req.headers.range;
@@ -38,7 +44,7 @@ app.get("/video", (req: Request, res: Response) => {
     }
 
     const videoPath = resolve('./video/bigbuck.mp4');
-    const videoSize = statSync(videoPath).size;
+    const videoSize = getVideoSize(videoPath);
 
     const CHUNK_SIZE = 10 ** 6; // 1MB 
     const start = Number(range?.replace(/\D/g, ""));
