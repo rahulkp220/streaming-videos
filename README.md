@@ -1,7 +1,8 @@
 # streaming-videos
-Learn to stream any video using nodejs
+Learn to stream any video using nodejs along with typescript.
+The app uses `winston` logging and `express` backend to serve the video content.
 
-## run the app
+### run the app
 Use the following commands to run the app
 ```
 npm run serve
