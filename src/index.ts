@@ -31,8 +31,7 @@ app.get("/", (req: Request, res: Response) => {
 
 // get video size
 const getVideoSize = (videoPath: string) => {
-    const videoSize = statSync(videoPath).size;
-    return videoSize
+    return statSync(videoPath).size;
 }
 
 // server video in chunks of 1MB
