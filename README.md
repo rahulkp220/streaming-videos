@@ -33,10 +33,10 @@ This would produce an o/p that would look like this,
 .
 ```
 
-### Screenshot showing chunkeed video requests
+### Screenshot showing chunked video requests
 ![Chunked Video Requests](./screenshots/Chunked%20video%20requests.png)
 
 ### Credits
-- This is a typescript implementation of the code originally presented in the awesome youtube video [How To Code A Video Streaming Server in NodeJS](https://www.youtube.com/watch?v=ZjBLbXUuyWg) by [AbdisalanCodes](https://www.youtube.com/channel/UC3IZLtnKL9wZ8wuuQg3MJPA)
+- This is a typescript implementation of the code originally presented in the awesome youtube video [How To Code A Video Streaming Server in NodeJS](https://www.youtube.com/watch?v=ZjBLbXUuyWg) by [AbdisalanCodes](https://www.youtube.com/channel/UC3IZLtnKL9wZ8wuuQg3MJPA). Do check out his videos on streaming :tada:
 
-- The video used for this repo has been download via [Learning Container](https://www.learningcontainer.com/mp4-sample-video-files-download/) originally a part of clip from the movie [Big Buck Bunny](https://peach.blender.org/)
+- The video used for this repo has been download via [Learning Container](https://www.learningcontainer.com/mp4-sample-video-files-download/) originally a part of clip from the movie [Big Buck Bunny](https://peach.blender.org/) shared under the [Creative Commons v3.0 License](https://creativecommons.org/licenses/by/3.0/)
