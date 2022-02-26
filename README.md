@@ -1,8 +1,11 @@
 # streaming-videos
 
-Learn to stream any video using nodejs along with typescript.
+Learn to stream videos using nodejs along with `typescript`.
 
-The app uses `winston` logging and `express` backend to serve the video content.
+The app uses the following 
+- `winston` for logging
+- `express` as backend framework
+- `eslint` for linting
 
 ![Final](./screenshots/Final%20webpage.png)
 
