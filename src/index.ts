@@ -23,11 +23,13 @@ const logger = winston.createLogger({
 const app: Express = express();
 const PORT = process.env.PORT || 8000;
 
+// serve the main file
 app.get("/", (req: Request, res: Response) => {
     logger.info('Serving file...');
     res.sendFile(resolve("./index.html"));
 });
 
+// server video in chunks of 1MB
 app.get("/video", (req: Request, res: Response) => {
     const range = req.headers.range;
     if (!range) {
@@ -57,4 +59,5 @@ app.get("/video", (req: Request, res: Response) => {
 
 })
 
+// run server 
 app.listen(PORT, () => console.log(`Running on port ${PORT}`))
