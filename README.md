@@ -1,8 +1,13 @@
 # streaming-videos
+
 Learn to stream any video using nodejs along with typescript.
+
 The app uses `winston` logging and `express` backend to serve the video content.
 
-### run the app
+![Final](./screenshots/Final webpage.png)
+
+
+### Run the app
 Use the following commands to run the app
 ```
 npm run serve
@@ -27,3 +32,6 @@ This would produce an o/p that would look like this,
 ..
 .
 ```
+
+### Screenshot showing chunkeed video requests
+![Chunked Video Requests](./screenshots/Chunked video requests.png)
