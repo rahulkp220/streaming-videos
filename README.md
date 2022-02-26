@@ -35,3 +35,8 @@ This would produce an o/p that would look like this,
 
 ### Screenshot showing chunkeed video requests
 ![Chunked Video Requests](./screenshots/Chunked%20video%20requests.png)
+
+### Credits
+- This is a typescript implementation of the code originally presented in the awesome youtube video [How To Code A Video Streaming Server in NodeJS](https://www.youtube.com/watch?v=ZjBLbXUuyWg) by [AbdisalanCodes](https://www.youtube.com/channel/UC3IZLtnKL9wZ8wuuQg3MJPA)
+
+- The video used for this repo has been download via [Learning Container](https://www.learningcontainer.com/mp4-sample-video-files-download/) originally a part of clip from the movie [Big Buck Bunny](https://peach.blender.org/)
