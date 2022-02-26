@@ -2,7 +2,7 @@
 
 import express, { Express, Request, Response }  from "express";
 import { createReadStream, statSync } from "fs" 
-import path, { resolve } from 'path';
+import { resolve } from 'path';
 import winston, { format } from "winston";
 
 // set up logging
