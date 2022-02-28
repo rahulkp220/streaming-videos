@@ -105,3 +105,6 @@ dist
 
 # apple
 .DS_Store
+
+# environment file
+.env

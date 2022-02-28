@@ -4,6 +4,9 @@ import express, { Express, Request, Response }  from "express";
 import { createReadStream, statSync } from "fs" 
 import { resolve } from 'path';
 import winston, { format } from "winston";
+import dotenv from 'dotenv';
+
+dotenv.config();
 
 // set up logging
 const logger = winston.createLogger({
